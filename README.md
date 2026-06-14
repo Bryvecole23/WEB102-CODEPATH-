@@ -1,36 +1,54 @@
-# Web Development Project 1 - Street & Prep Dispatch
+# Web Development Project 2 - Computer Science Flashcards
 
 Submitted by: **Bryce Alexander**
 
-This web app: **A community style board built with React that showcases 10 street and prep fashion aesthetics rooted in HBCU and urban culture. Each card displays a style category, vibe, key pieces, color palette, and inspiration, along with a link to explore more on Pinterest.**
+This web app: **A computer science-themed flashcard study application built with React that helps users review foundational computer science concepts commonly found in coursework and technical interviews. Users can click cards to reveal answers and generate a random new card for continued practice. Cards are categorized by difficulty level with unique visual styles for Easy, Medium, and Hard concepts.**
 
-Time spent: **7** hours spent in total
+Time spent: **5** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [x] **The app has a cohesive, unique theme for events or resources relevant to a specific community**
-- [x] Header/title describing the theme is displayed
-- [x] **At least 10 unique events or resources are displayed in a responsive card format**
-- [x] There are at least 10 cards displayed for 10 different events 
-- [x] The cards should be displayed in an organized format (ex. a grid, or in one line)
-- [x] Each card should include some information about the event or resource
+- [x] **The app displays the title of the card set, a short description, and the total number of cards**
+  - [x] Title of card set is displayed
+  - [x] A short description of the card set is displayed
+  - [x] A list of card pairs is created
+  - [x] The total number of cards in the set is displayed
+  - [x] Card set is represented as a list of card pairs
 
+- [x] **A single card at a time is displayed**
+  - [x] Only one half of the information pair is displayed at a time
+
+- [x] **Clicking on the card flips the card over, showing the corresponding component of the information pair**
+  - [x] Clicking on a card flips it over, showing the back with corresponding information
+  - [x] Clicking on a flipped card again flips it back, showing the front
+
+- [x] **Clicking on the next button displays a random new card**
+
+## Optional Features
 
 The following **optional** features are implemented:
 
-- [x] Buttons or links to a related resources are on each card component - [x] All cards have buttons or links in addition to text
-- [x] The site is responsive for both desktop and mobile formats
-- [x] Web app is shown in a mobile format
-- [x] **Video Walkthrough Special Instructions**: To ease the grading process, please use Chrome Developer Tools' "Toggle Device" button to demonstrate that your web application's responsiveness in both a desktop *and* a mobile format. Detailed instructions can be found below this stretch feature on the project page. 
+- [ ] Cards contain images in addition to or in place of text
+  - [ ] Some or all cards have images in place of or in addition to text
+
+- [x] Cards have different visual styles such as color based on their category
+  - [x] Difficulty categories implemented (Easy, Medium, Hard)
+  - [x] Easy cards use green styling
+  - [x] Medium cards use gold styling
+  - [x] Hard cards use red styling
+
+## Additional Features
 
 The following **additional** features are implemented:
 
-* [x] Local image assets used for each card to authentically represent each style
-* [x] Newspaper masthead design for the header with custom Google Fonts typography
-* [x] Color coded top stripe on each card to visually differentiate style categories
-* [x] Pushpin design detail on each card to reinforce the community bulletin board theme
+* [x] GitHub-inspired dark mode interface designed around a computer science theme
+* [x] Developer-style typography to create a technical interview preparation aesthetic
+* [x] Difficulty badges displayed on each flashcard
+* [x] Random card generation prevents the same card from appearing consecutively
+* [x] Hover animations and visual feedback for improved user experience
+* [x] Computer science interview preparation topic selection tailored toward technical learning
 
 ## Video Walkthrough
 
@@ -38,20 +56,17 @@ Here's a walkthrough of implemented required features:
 
 <img src='
 
-https://github.com/user-attachments/assets/c53baadd-563d-4962-b003-31ab81104226
+https://submissions.us-east-1.linodeobjects.com/web102/oIRR8aDB.gif
 
 ' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-
 ## Notes
 
-Describe any challenges encountered while building the app.
-
-The biggest challenge was managing local image assets and ensuring each photo was properly framed using object-position in CSS. Setting up the Vite React project from scratch and understanding how props flow from the data file through App.jsx into the StyleCard component was a great learning experience.
+The biggest challenge was implementing the random card selection logic while ensuring the same card would not immediately repeat. Another challenge was designing a user interface that felt unique and aligned with the computer science theme while still staying within the scope of the project requirements. Creating category-based styling for difficulty levels was also a good exercise in combining React props with dynamic CSS classes.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2026 Bryce Alexander
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
